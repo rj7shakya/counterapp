@@ -1,12 +1,11 @@
 import React from "react";
-import Circle from "./Circle";
 import "./Container.css";
+import Shape from "./Shape";
 
 const Container = () => {
   return (
     <div className="container">
-      <Circle />
-      <div className="square"></div>
+      <Shape />
     </div>
   );
 };

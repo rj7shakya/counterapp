@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Circle extends Component {
+export default class Shape extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +11,7 @@ export default class Circle extends Component {
   render() {
     return (
       <div
-        className="circle"
+        className="shape"
         style={{ backgroundColor: this.state.bgcolor }}
         onClick={() => {
           this.setState({

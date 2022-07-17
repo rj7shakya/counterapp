@@ -8,16 +8,10 @@
   align-items: center;
 }
 
-.circle {
+.shape {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  background-color: gray;
-}
-
-.square {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  margin-left: 1rem;
+  margin-right: 1rem;
+  /* border-radius: 50%; */
+  /* background-color: gray; */
 }
