@@ -1,8 +1,14 @@
 import "./App.css";
-import { Counter } from "./components/Counter";
+import ClassTest from "./test/ClassTest";
+import FunctionTest from "./test/FunctionTest";
 
 function App() {
-  return <Counter />;
+  return (
+    <>
+      <ClassTest increaseBy={2} />
+      <FunctionTest increaseBy={3} />
+    </>
+  );
 }
 
 export default App;

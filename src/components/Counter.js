@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Counter.css";
 
 class Counter extends Component {
   constructor(props) {
@@ -8,21 +9,24 @@ class Counter extends Component {
     };
   }
 
+  plusFunction = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+    });
+  };
+
   render() {
     return (
       <div className="container">
         <div className="counter">Counter</div>
+
         <div className="count">{this.state.counter}</div>
 
-        <div
-          className="plus__button"
-          onClick={() => {
-            this.setState({
-              counter: this.state.counter + 1,
-            });
-          }}
-        >
+        <div className="plus__button" onClick={this.plusFunction}>
           +
+        </div>
+        <div className="plus__button" onClick={this.plusFunction}>
+          -
         </div>
       </div>
     );
