@@ -9,7 +9,7 @@ export default class ClassTest extends Component {
   }
 
   render() {
-    return (
+    return {
       <div>
         Count:{this.state.count}
         <div
@@ -22,6 +22,6 @@ export default class ClassTest extends Component {
           +
         </div>
       </div>
-    );
+        };
   }
 }

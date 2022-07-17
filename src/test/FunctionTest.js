@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FunctionTest = (props) => {
+const functionTest = (props) => {
   const [count, setCount] = useState(0);
 
   return (
@@ -17,4 +17,4 @@ const FunctionTest = (props) => {
   );
 };
 
-export default FunctionTest;
+export default functionTest;
